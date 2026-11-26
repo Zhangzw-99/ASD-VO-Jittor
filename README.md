@@ -146,6 +146,19 @@ timestamp,name_image,tx,ty,tz,qw,qx,qy,qz
 └── scripts/run.sh
 ```
 
+## ⚡ Benchmark
+
+Comparison between the PyTorch implementation ([ASD-VO](https://github.com/Zhangzw-99/ASD-VO)) and the Jittor backends on four representative CLiMB sequences:
+
+| Sequence | PyTorch <br>(`ATE / score_ate / Time`) | Jittor <br>(`ATE / score_ate / Time`) | Jittor (`CUDA_INLINE`)<br>(`ATE / score_ate / Time`) |
+|:---|:---:|:---:|:---:|
+| `Seq_001_a` | 1.327 mm / 1.970 / 38.092 s | 1.258 mm / 1.887 / 75.247 s | 1.369 mm / 1.868 / 33.455 s |
+| `Seq_001_c` | 0.941 mm / 1.000 / 16.221 s | 0.900 mm / 1.350 / 54.832 s | 0.900 mm / 1.223 / 24.733 s |
+| `Seq_003_a` | 0.695 mm / 0.731 / 26.846 s | 0.638 mm / 0.957 / 68.847 s | 0.638 mm / 0.813 / 37.698 s |
+| `Seq_003_b` | 2.300 mm / 2.587 / 11.154 s | 1.883 mm / 2.824 / 37.639 s | 1.880 mm / 2.704 / 16.744 s |
+| **Mean / Total** | **1.32 mm / 1.572 / 92.31 s** | **1.17 mm / 1.755 / 236.57 s** | **1.20 mm / 1.652 / 112.63 s** |
+
+
 ## 📖 Citation
 
 If you find ASD-VO useful, please cite:
