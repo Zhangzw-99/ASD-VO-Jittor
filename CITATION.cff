@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use ASD-VO, please cite this software and the upstream DPVO and DPV-SLAM papers."
+title: "ASD-VO: Adaptive Submap Decomposition for Endoscopic Visual Odometry"
+type: software
+authors:
+  - family-names: Zhang
+    given-names: Zhenwei
+  - family-names: Wang
+    given-names: Lituan
+  - family-names: Wang
+    given-names: Ao
+  - family-names: Gong
+    given-names: Xiangbao
+repository-code: "https://github.com/Zhangzw-99/ASD-VO"
+license: MIT

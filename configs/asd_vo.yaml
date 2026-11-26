@@ -1,0 +1,31 @@
+### DPVO Config File ###
+
+# VO config (increase for better accuracy)
+PATCHES_PER_FRAME: 48
+REMOVAL_WINDOW: 16
+OPTIMIZATION_WINDOW: 7
+PATCH_LIFETIME: 11
+
+# threshold for keyframe removal
+KEYFRAME_THRESH: 15.0
+
+# camera motion model
+MOTION_MODEL: 'DAMPED_LINEAR'
+MOTION_DAMPING: 0.5
+
+# maybe use mixed precision for inference
+MIXED_PRECISION: True
+
+BA_HUBER_DELTA: 2.0
+BA_RELATIVE_DEPTH_BETA: 0.00001
+
+CENTROID_SEL_STRAT: 'RANDOM'
+
+FRAME_SELECTION:
+  ENABLED: True
+  MODE: 'BINARY'
+  SOFT_WEIGHT: 0.10
+  BLUR_SOFT_RECOVERY_FRAMES: 8
+
+# DPV-SLAM backend
+LOOP_CLOSURE: True

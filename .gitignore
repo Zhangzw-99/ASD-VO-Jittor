@@ -1,0 +1,22 @@
+# Keep release documentation visible even inside the development repository.
+!*.md
+!docs/
+!docs/*.md
+
+__pycache__/
+*.pyc
+*.so
+*.o
+*.egg-info/
+build/
+dist/
+*.pth
+*.pt
+*.pkl
+*.zip
+*.mp4
+ckpt/
+data/
+output/
+output*/
+*.log

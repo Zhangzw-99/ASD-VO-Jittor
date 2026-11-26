@@ -1,0 +1,10 @@
+# Pure Jittor standalone dependencies (CUDA 12.4 + cuDNN 8.9 recommended)
+jittor>=1.3.11
+numpy<2
+opencv-python-headless==4.10.0.84
+scipy
+einops==0.8.2
+yacs==0.1.8
+numba
+matplotlib
+tqdm
